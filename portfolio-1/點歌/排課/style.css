@@ -1,0 +1,18 @@
+body {
+    text-align: center;
+}
+
+h2 {
+    /* 預留歌曲名稱顯示空間 */
+    height: 20px;
+    font-size: medium;
+}
+li {
+    text-align: left;
+    display: none;
+}
+h3{
+    height:20px;
+    text-align: center;
+    font-weight: bold;
+}

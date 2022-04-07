@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+   <title>Animation</title>
+   <style type="text/css">
+      ol {
+         margin: 0;
+      }
+
+      li {
+         margin-right: 1em;
+         display: inline;
+      }
+
+      div#box {
+         width: 50px;
+         height: 50px;
+         border-radius: 25px;
+         position: relative;
+         background: -webkit-radial-gradient(center, navy, white);
+         -webkit-animation: movingimage linear 1s 1s infinite alternate;
+
+      }
+
+      @-webkit-keyframes movingimage {
+         0% {
+            opacity: 1;
+            left: 0px;
+            top: 0px;
+         }
+
+         25% {
+            opacity: 1;
+            left: 50px;
+            top: 50px
+         }
+
+         50% {
+            opacity: 1;
+            left: 100px;
+            top: 0px
+         }
+
+         75% {
+            opacity: 1;
+            left: 150px;
+            top: 50px
+         }
+
+         100% {
+            opacity: 1;
+            left: 200px;
+            top: 0px
+         }
+      }
+   </style>
+   <script>
+      var num = window.prompt("Please input a number:");
+      num = parseInt(num);
+      num = num + 1;
+      var output = "";
+      var arr = new Array();
+      arr[0] = new Array();
+      arr[0][0] = 1;
+      output = output + "<p>1</p>";
+      for (var i = 1; i < num - 1; i++) {
+         arr[i] = new Array();
+         arr[i][0] = 1;
+         arr[i][i] = 1;
+         output = output + "<p>1 ";
+         for (var j = 1; j < i; j++) {
+            var m = i - 1;
+            var n = j - 1;
+            arr[i][j] = arr[m][j] + arr[m][n];
+            output = output + arr[i][j] + " ";
+         }
+         output = output + "1</p>"
+      }
+      document.writeln(output);
+   </script>
+</head>
+
+<body>
+   <div id="box"></div>
+   <div id = "output1"></div>
+   <div id = "output2"></div>
+</body>
+
+</html>

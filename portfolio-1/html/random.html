@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Random Dice Images</title>
+    <script>
+        function start() {
+            var button = document.getElementById("border");
+            button.addEventListener("click", change, false);
+        }
+        function change() {
+            var x = document.forms;
+            var cl = x[0].cl.value;
+            document.body.setAttribute("style",
+                "background-color: " + cl);
+        }
+        window.addEventListener("load", start, false);  
+    </script>
+
+    <style type="text/css">
+        div {
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+        }
+
+        li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        ul {
+            margin: 0;
+        }
+    </style>
+    <script>
+        var db;
+        function start() {
+            var button = document.getElementById("rollButton");
+            button.addEventListener("click", set, false);
+        }
+        function set() {
+            db = document.getElementById("tmp");
+            var r = Math.floor(0 + Math.random() * 255);
+            var g = Math.floor(0 + Math.random() * 255);
+            var b = Math.floor(0 + Math.random() * 255);
+            var color = "background:rgb(" + r + "," + g + "," + b + ")";
+            db.setAttribute("style", color);
+        } // end function setImage
+        window.addEventListener("load", start, false);
+    </script>
+</head>
+
+<body>
+    <form action="#">
+        <p>
+            <lable>Color:
+                <input type="color" name="cl" />(Hexadecimal code such as #ADD8E6)
+            </lable>
+        </p>
+        <p>
+            <input id="border" type="button" value="Change">
+        </p>
+        <input id="rollButton" type="button" value="Chang Color">
+    </form>
+    <div id="tmp"></div>
+</body>
+
+</html>

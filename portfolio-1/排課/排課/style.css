@@ -1,0 +1,19 @@
+body {
+    text-align: center;
+    background-image: url(背景.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+table {
+    width: 60%;
+    font-size: 1.5em;
+    /* 字母大小   px,em(上一層*1.5倍),rem*/
+    margin: auto;
+    border-style: dotted;
+}
+
+td {
+    border-bottom: 1px solid rgb(244, 82, 23);
+}

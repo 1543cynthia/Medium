@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>transition1</title>
+      <style type = "text/css">
+      div#box1
+{   position:absolute;
+    top:50px;
+    left:50px;
+    z-index:2;
+    border: 1px solid orange;
+    height : 30px;
+    width : 370px;
+}
+div#box2
+{
+    height : 30px;
+    width : 0px;
+    margin : -1px;
+    overflow:hidden;
+    border: 1px solid orange;
+    background:-webkit-gradient(
+    linear,left top,right top,
+    color-stop(15%,white),color-stop(50%,yellow),
+    color-stop(75%,orange));
+     background:moz-linear-gradient(
+     left,white 15%,yellow 50%,orange 75%
+     );
+        background:linear-gradient(
+     left,white 15%,yellow 50%,orange 75%
+     );
+       -webkit-transition:all 4s linear;
+       transition:all 4s linear;
+       border:1px solid red;
+    )
+}
+#box1:hover #box2{
+width:370px;
+}
+#box3 {
+    position:relative;
+    width:500px;
+    height:100px;
+    margin:0 auto 10px;
+    border:1px solid black;
+    padding:10px;
+}
+#box4 {
+    font-size:12px;
+    position:relative;
+    width:60px;
+    height:60px;
+   -webkit-transition:all 4s ease;
+   transition:all 4s ease;
+   border:1px solid red;
+}
+#box4 p {
+    text-align:center;
+    padding-top:4px;
+}
+#box3:hover #box4 {
+   margin-left:420px;
+   -webkit-border-radius:30px;
+   border-radius:30px;
+   -webkit-transform:rotate(720deg);
+   transform:rotate(720deg);
+   margin-left:420px ;
+}
+
+      </style>
+   </head>
+   <body>
+   <div id="box1">
+    <div id="box2">
+       <p> 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%</p>
+    </div>
+</div>
+<div id="box3">
+   <div id="box4"><p>Rotate 720</p></div>
+</div>
+   </body>
+</html>

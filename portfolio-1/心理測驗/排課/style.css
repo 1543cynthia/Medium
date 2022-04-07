@@ -1,0 +1,16 @@
+body{
+    text-align: center;
+    /* background-color: plum; */
+    background-image: url(背景.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    table{
+        width:60%;
+        font-size:1.5em;/* 字母大小   px,em(上一層*1.5倍),rem*/
+        margin:auto;
+   border-style:dotted;
+    }
+   td {
+    border-bottom:1px  solid blue;
+    }

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!-- Fig. 2.1: main.html -->
+<!-- First HTML5 example. -->
+
+<html>
+<head>
+    <!--<form method = "post" action = "s1101543_HW.php">-->
+
+    <meta charset="utf-8">
+    <title>資己資彼</title>      
+	
+    
+	<style >
+        @media screen
+{
+
+	body{background-image:url( ' https://img1.dowebok.com/4425.png ' ); 
+            background-repeat: no-repeat;
+            background-size:cover; 
+            background-attachment: fixed;
+			}
+			
+	em  { font-weight: bold; 
+        color: white; }
+    h1  { font-family: Helvetica; color:GoldenRod}
+    p   { font-size:18pt;font-family: Times Roman
+	; color:white }
+   
+	
+	.main-title {
+	text-shadow: -4px 4px 6px black;
+
+
+	     color: Yellow;
+         font-size: 200px;
+         text-align: center;
+         padding-top: 80px;
+         padding-bottom: 200px;
+	} 
+	.special { color: red; }
+}
+     
+     
+     @media only screen 
+    and (device-width : 414px) 
+    and (device-height : 896px) 
+    and (-webkit-device-pixel-ratio : 2) {
+      body{background-image:url( 'https://0523k.com/wp-content/uploads/2021/04/1619657277-96872949c445e86.jpg ' ); 
+            background-repeat: no-repeat;
+            background-size:cover; 
+            background-attachment: fixed;
+			}
+		
+		em  { font-weight: bold; 
+        color: white; }
+        h1  { font-family: Helvetica; color:Indigo; }
+		h2  { font-family: Helvetica; color:Indigo;}
+        p   { font-size:18pt;font-family: Times Roman
+	      ; color:MediumOrchid}
+    } 
+    }
+       
+
+        
+	</style>
+	<link rel = "stylesheet" type = "text/css" href = "css/style.css">
+</head>
+
+<body>
+     
+    <h1 class="main-title">資己資彼</h1>
+
+    <h1>介紹:</h1>
+     <p style=color:chocolate;>四資:資管、資工、資傳、英專班</p>
+	 <p>  主要目的是促進資訊學院的學生<em>多多交流</em>，也可以認識別院同學，
+	 交個朋友，<em>拓展屬於你的視野。</em></p>
+	
+    <h1>報名表格:</h1>
+      <form method = "post" action = "s1101543_HW2.php">
+	  <p><label>姓名:
+                <input name = "name" type = "text" size = "25">
+        </label></p>
+			  
+	  <p><label>電話:
+               <input name ="phone" input type = "tel" placeholder = "####-###-###" 
+                  pattern = "\d{4}-\d{3}-\d{3}" required />
+                  ####-###-###
+        </label></p>
+				  
+      <p><label>學號:
+                <input name ="studentID" input type = "tel" placeholder = "sxxxxxxx" 
+                  pattern = "s\d{6,7}" required />
+                  sxxxxxxx
+        </label></p>
+	  <p><label>email:
+               <input name ="email" input type = "email" placeholder = "@gmail.com" required />
+                  @gmail.com
+        </label></p>
+		 
+	  <p>
+         <strong>從哪裡知道這個網站</strong><br>
+                  
+            <label>
+                <input name = "rating" type = "radio" value = "school">學校公告</label>
+            <label>
+                <input name = "rating" type = "radio" value = "friend">從朋友那聽到</label>
+            <label>
+                <input name = "rating" type = "radio" value = "teacher">老師推廣</label>
+            <label>
+                <input name = "rating" type = "radio" value = "Boring">無聊滑到的</label>
+            <label>
+                <input name = "rating" type = "radio" value = "Code">其他</label>
+            <label>
+                <input name = "rating" type = "text" size = "25"></label>
+       </p>
+	  <p><label>對於活動的期望:
+                <input name ="expect" input type = "number" 
+                  min = "1"
+                  max = "10"
+                  step = "1"
+                  value = "5" />
+        </label> (輸入一個數值1~10)</p>
+		  
+	  <p><label>填寫日期:
+                <input name ="date" input type = "date" />
+                  (yyyy-mm-dd)
+        </label> </p>
+        <p>
+          <img src="file/qrcode/s1101543.png" alt= "qrcode">
+        </p>
+            <input type = "submit" value = "Submit" />
+            <input type = "reset" value = "Clear" />
+	<h1>活動時間、地點:</h1>
+       <h2>時間:</h2>  
+	   <p class = "special">2021/11/11 1pm~6pm</p>
+	   <h2>地點:</h2>  
+	   <p class = "special">操場</p>
+    <h1>聯繫我們:</h1>
+       <p>歡迎有任何問題可以提問~</p>	
+     </form>       
+</body>
+
+</html>
