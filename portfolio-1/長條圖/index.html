@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="bar-chart-container"></div> <!-- 先產生圖 -->
+    <div class="controls">
+        <!-- 產生按鈕 -->
+        <button data-name="revenue">Revenue</button>
+        <button data-name="budget">Budget</button>
+        <button data-name="popularity">Popularity</button>
+    </div>
+
+    <div class="tooltip">
+        <!-- 讓tooltip更格式化 -->
+        <div class="tip-header">
+            <h3></h3>
+            <h4></h4>
+        </div>
+        <div class="tip-body"></div>
+    </div>
+
+    <script src="//unpkg.com/d3"></script>
+    <script src="main.js"></script>
+    <input type="button"  onclick="location.href='../index.html#work'"  value="返回" id="button1">
+</body>
+
+</html>

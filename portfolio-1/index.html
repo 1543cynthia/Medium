@@ -14,35 +14,41 @@
 
 				<!-- Nav -->
 					<nav id="nav">
-						<a href="#" class="icon solid fa-home"><span>Home</span></a>
+						<!-- nav:表示页面的一部分，其目的是在当前文档或其他文档中提供导航链接。导航部分的常见示例是菜单，目录和索引。 -->
+						<!-- nav:用來放熱門鏈結,<footer>元素就常用来在页面底部包含一个不常用到-->
+						<a href="#" class="icon solid fa-home"><span>Home</span></a><!-- icon:小圖示 上面四個圖案 -->
+						<!-- class:class 的值是一个以空格分隔的元素的类名（classes ）列表，它允许 CSS 和 Javascript 通过类选择器 (class selectors) 或 DOM 方法 ( document.getElementsByClassName) 来选择和访问特定的元素。 -->
 						<a href="#work" class="icon solid fa-folder"><span>Work</span></a>
 						<a href="#contact" class="icon solid fa-envelope"><span>Contact</span></a>
-						<a href="https://twitter.com/ajlkn" class="icon brands fa-twitter"><span>Twitter</span></a>
+						<a href="https://www.instagram.com/avin_chang/" class="icon brands fa-instagram"><span>instagram</span></a>
 					</nav>
 
 				<!-- Main -->
 					<div id="main">
 
 						<!-- Me -->
-							<article id="home" class="panel intro">
+							<article id="home" class="panel intro"> <!--article:表示文档、页面、应用或网站中的独立结构，其意在成为可独立分配的或可复用的结构,给定文档中可以包含多篇文章-->
 								<header>
 									<h1>張燕雲</h1>
-									<p>網站期中作業</p>
+									<p>網站期末作業</p>
 								</header>
-								<img src="images/本人.jpg" width="250px" style="margin:20px;">
+								<img src="images/本人.jpg"  alt="error" width="250px" style="margin:20px;">
 								<a href="#work" class="jumplink pic">
 									<span class="arrow icon solid fa-chevron-right"><span>See my work</span></span>
-									<img src="images/me.jpg" alt="error" />
+									<!--span:span元素是短语内容的通用行内容器，并没有任何特殊语义。可以使用它来编组元素以达到某种样式意图(ex:id類型),或者这些元素有着共同的属性-->
+									<!--span:<span> 与 <div> 元素很相似，但 <div> 是一个 块元素 而 <span> 则是 行内元素 . -->
+									<img src="images/素色3.png" alt="error" />
 								</a>
 							</article>
 
 						<!-- Work -->
 							<article id="work" class="panel">
 								<header>
+								<!--header:用于展示介绍性内容，通常包含一组介绍性的或是辅助导航的实用元素。它可能包含一些标题元素，但也可能包含其他元素(ex:logo 作者名稱) -->
 									<h2>作品介紹</h2>
 								</header>
 								<p>
-									包含點餐系統、點唱機、心理測驗、RPG......等等，歡迎體驗。
+									多元展示，每點擊一個都是不一樣的玩法，歡迎體驗。
 								</p>
 								<section>
 									<div class="row">
@@ -74,13 +80,13 @@
 											<a href="點歌/排課/main.html" class="image fit"><img src="images/yt.png" alt=""></a>
 										</div>
 										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic10.jpg" alt=""></a>
+											<a href="vue更正/index.html" class="image fit"><img src="images/vue.png" alt=""></a>
 										</div>
 										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic11.jpg" alt=""></a>
+											<a href="長條圖/index.html" class="image fit"><img src="images/長條圖.png" alt=""></a>
 										</div>
 										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic12.jpg" alt=""></a>
+											<a href="散布圖/index.html" class="image fit"><img src="images/散布圖.png" alt=""></a>
 										</div>
 									</div>
 								</section>
@@ -101,6 +107,9 @@
 												<input type="text" name="email" placeholder="Email" />
 											</div>
 											<div class="col-12">
+												<input type="text" name="suggest" placeholder="Suggest" /><!--placeholder 属性规定可描述输入字段预期值的简短的提示信息-->
+											</div>
+											<div class="col-12">
 												<input type="text" name="subject" placeholder="Subject" />
 											</div>
 											<div class="col-12">
@@ -116,10 +125,10 @@
 
 					</div>
 
-				<!-- Footer -->
+				<!-- Footer    對應nav,<footer>元素就常用来在页面底部包含一个不常用到-->    
 					<div id="footer">
 						<ul class="copyright">
-							<li>&copy; Untitled.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							<li>&copy; Untitled.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>  <!--  主要面最底下的HTML5 -->
 						</ul>
 					</div>
 

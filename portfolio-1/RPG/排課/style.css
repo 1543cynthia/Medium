@@ -1,9 +1,16 @@
 body{
+  background-image:url(images/背景.jpg);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size:cover;
     text-align: center;
     }
     canvas{
      border:2px solid black;
      background-image:url(images/grasses68.gif); /* url()一個內置函數，用於包含文件。函數可用於背景圖像，邊框圖像，列表樣式圖像，內容，光標，邊框圖像，邊框圖像源， */
+    }
+    h1{
+      color: rgb(255, 255, 255);
     }
 #talkBox {
       height:20px;

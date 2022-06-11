@@ -1300,7 +1300,7 @@ input, select, textarea {
 	}
 
 	body {
-		background-image: url("images/overlay.png"), url("images/bg.jpg");
+		background-image: url("images/overlay.png"), url("images/淺綠背景1.jpg");/*png的那可以幫助我填滿背景*/
 		background-repeat: repeat, no-repeat;
 		background-size: auto, 100% 100%;
 		background-attachment: fixed;
@@ -1394,6 +1394,7 @@ input, select, textarea {
 
 	}
 
+	/* blockquote:定義一段文字屬於引用。這元素會透過縮排來呈現 */
 	blockquote {
 		border-left: solid 0.5em #ddd;
 		padding: 1em 0 1em 2em;
